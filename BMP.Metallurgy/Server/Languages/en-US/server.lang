@@ -1,4 +1,4 @@
-items.Bench_Blast_Furnace.name=Blast Furnace
-items.Bench_Blast_Furnace.description=Turns Iron Ingots into Steel Ingots
-items.Ingredient_Bar_Steel.name=Steel Ingot
-items.Ingredient_Coke_Coal.name=Coke Coal
+items.Bench_Blast_Furnace.name = Blast Furnace
+items.Bench_Blast_Furnace.description = Turns <b>Iron Ingots</b> into <b>Steel Ingots</b>. Upgrading reduces smelting times and increases storage capacity.
+items.Ingredient_Bar_Steel.name = Steel Ingot
+items.Ingredient_Coke_Coal.name = Coke Coal
