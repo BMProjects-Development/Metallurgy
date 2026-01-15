@@ -1,0 +1,25 @@
+{
+  "Group": "BMP",
+  "Name": "Metallurgy",
+  "Version": "1.0.0-prealpha",
+  "Description": "Metallurgy is our everything.",
+  "Authors": [
+    {
+      "Name": "Maksik210",
+      "Email": "",
+      "Url": ""
+    },
+    {
+      "Name": "BarMaxx",
+      "Email": "",
+      "Url": ""
+    }
+  ],
+  "Website": "https://curseforge.com/hytale/mods/metallurgy",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": false,
+  "SubPlugins": []
+}
