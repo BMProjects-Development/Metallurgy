@@ -10,12 +10,10 @@
   "Recipe": {
     "Input": [
       {
-        "ResourceTypeId": "",
         "Quantity": 1,
         "ItemId": "Bench_Furnace"
       },
       {
-        "ResourceTypeId": "",
         "Quantity": 10,
         "ItemId": "Ingredient_Charcoal"
       }
