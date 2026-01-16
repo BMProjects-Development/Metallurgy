@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Ingredient_Coke_Coal.name"
+    "Name": "server.items.Ingredient_Coke_Coal.name",
+    "Description": "server.items.Ingredient_Coke_Coal.description"
   },
   "Icon": "Icons/ItemsGenerated/Ingredient_Coke_Сoal.png",
   "Categories": [
@@ -40,7 +41,7 @@
       "Id": "Coke_Coal"
     }
   ],
-  "FuelQuality": 8,
+  "FuelQuality": 15,
   "PlayerAnimationsId": "Item",
   "Tags": {
     "Type": [
@@ -60,5 +61,20 @@
       0,
       -13.5
     ]
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ResourceTypeId": "Fuel",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Processing",
+        "Id": "Coke_Furnace"
+      }
+    ],
+    "TimeSeconds": 10
   }
 }

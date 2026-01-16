@@ -1,26 +1,26 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Bench_Blast_Furnace.name",
-    "Description": "server.items.Bench_Blast_Furnace.description"
+    "Name": "server.items.Bench_Furnace.name",
+    "Description": "server.items.Bench_Furnace.description"
   },
-  "Icon": "Icons/ItemsGenerated/Bench_Blast_Furnace.png",
+  "Icon": "Icons/ItemsGenerated/Bench_Furnace.png",
   "Categories": [
     "Furniture.Benches"
   ],
   "Recipe": {
     "Input": [
       {
-        "Quantity": 1,
-        "ItemId": "Bench_Furnace"
+        "ResourceTypeId": "Wood_Trunk",
+        "Quantity": 6
       },
       {
-        "Quantity": 10,
-        "ItemId": "Ingredient_Bar_Iron"
+        "ResourceTypeId": "Rock",
+        "Quantity": 6
       }
     ],
     "Output": [
       {
-        "ItemId": "Bench_Blast_Furnace",
+        "ItemId": "Bench_Furnace",
         "Metadata": {
           "BlockState": {
             "Type": "processingBench",
@@ -49,7 +49,7 @@
     "CustomModel": "Blocks/Benches/Furnace.blockymodel",
     "CustomModelTexture": [
       {
-        "Texture": "Resources/Blast_Furnace_Texture_Off.png",
+        "Texture": "Blocks/Benches/Furnace_Texture_Off.png",
         "Weight": 1
       }
     ],
@@ -67,9 +67,8 @@
       ],
       "Fuel": [
         {
-          "ResourceTypeId": "Coke_Coal",
-          "Icon": "Icons/Processing/FuelSlotIcon.png",
-          "FilterValidIngredients": false
+          "ResourceTypeId": "Fuel",
+          "Icon": "Icons/Processing/FuelSlotIcon.png"
         }
       ],
       "LocalOpenSoundEventId": "SFX_Furnace_Bench_Open",
@@ -79,19 +78,49 @@
       "FailedSoundEventId": "SFX_Furnace_Bench_Processing_Failed",
       "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
       "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
+      "ExtraOutput": {
+        "Outputs": [
+          {
+            "ItemId": "Ingredient_Charcoal"
+          }
+        ],
+        "PerFuelItemsConsumed": 2,
+        "IgnoredFuelSources": [
+          {
+            "ItemId": "Ingredient_Charcoal"
+          },
+          {
+            "ItemId": "Ingredient_Fibre"
+          },
+          {
+            "ItemId": "Ingredient_Tree_Sap"
+          },
+          {
+            "ItemId": "Ingredient_Coke_Coal"
+          }
+        ]
+      },
       "OutputSlotsCount": 4,
-      "Id": "Blast_Furnace",
+      "Id": "Furnace",
       "TierLevels": [
         {
           "UpgradeRequirement": {
             "Material": [
               {
-                "ItemId": "Ingredient_Bar_Steel",
+                "ItemId": "Ingredient_Bar_Copper",
                 "Quantity": 5
               },
               {
                 "ItemId": "Ingredient_Bar_Iron",
-                "Quantity": 10
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Bar_Thorium",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Bar_Cobalt",
+                "Quantity": 5
               }
             ],
             "TimeSeconds": 3
@@ -114,7 +143,7 @@
           },
           "CustomModelTexture": [
             {
-              "Texture": "Resources/Blast_Furnace_Texture.png",
+              "Texture": "Blocks/Benches/Furnace_Texture.png",
               "Weight": 1
             }
           ],
@@ -155,7 +184,7 @@
     },
     "HitboxType": "Bench_Furnace",
     "BlockParticleSetId": "Stone",
-    "ParticleColor": "#a64c23",
+    "ParticleColor": "#5C583E",
     "Support": {
       "Down": [
         {
