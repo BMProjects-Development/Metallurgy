@@ -20,7 +20,7 @@
     ],
     "Output": [
       {
-        "ItemId": "Bench_Furnace",
+        "ItemId": "Bench_Coke_Furnace",
         "Metadata": {
           "BlockState": {
             "Type": "processingBench",
