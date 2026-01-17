@@ -10,3 +10,4 @@ items.Ingredient_Bar_Tin.description = Mix a <b>Tin Ingot</b> with a <b>Copper I
 items.Ore_Tin.name = Tin Ore
 items.Bench_Alloy_Kiln.name = Alloy Kiln
 items.Bench_Alloy_Kiln.description = Allows you to mix <b>metals</b> and obtain their <b>alloys</b>.
+items.Ingredient_Slag.name = Slag

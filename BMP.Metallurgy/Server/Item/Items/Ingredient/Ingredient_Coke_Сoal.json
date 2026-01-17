@@ -1,0 +1,80 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Ingredient_Coke_Coal.name",
+    "Description": "server.items.Ingredient_Coke_Coal.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Ingredient_Coke_Сoal.png",
+  "Categories": [
+    "Blocks.Rocks"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Blocks/Stone/Rubble_Charcoal.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Rubble/Coke_Coal.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Stone",
+    "HitboxType": "Rubble",
+    "Flags": {},
+    "RandomRotation": "YawStep1",
+    "Gathering": {
+      "Soft": {},
+      "Harvest": {}
+    },
+    "BlockParticleSetId": "Dust",
+    "BlockSoundSetId": "Stone",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    }
+  },
+  "ResourceTypes": [
+    {
+      "Id": "Coke_Coal"
+    }
+  ],
+  "FuelQuality": 15,
+  "PlayerAnimationsId": "Item",
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "DropOnDeath": true,
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "ResourceTypeId": "Fuel",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Processing",
+        "Id": "Coke_Furnace"
+      }
+    ],
+    "TimeSeconds": 10
+  }
+}
