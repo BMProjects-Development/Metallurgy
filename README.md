@@ -12,7 +12,9 @@
 
 # Metallurgy - Metallurgy everything!
 Metallurgy is a mod that added new benchs, items, tools and weapons!
-# Features:     
+# Features:
+- New Items: Manyullyn and Pig Iron;
+- New Armor and Weapons for Manyullyn and Pig Iron;
 - New Bench Blocks: Coke Furnace and Blast Furnace;
 - New Ore - Tin;
 - New Items: Steel Bar and Bronze Bar;
