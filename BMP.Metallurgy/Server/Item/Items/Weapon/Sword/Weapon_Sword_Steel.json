@@ -1,0 +1,256 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Sword_Steel.name"
+  },
+  "Model": "Items/Weapons/Sword/Steel.blockymodel",
+  "Texture": "Items/Weapons/Sword/Steel_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Sword_Steel.png",
+  "Quality": "Uncommon",
+  "ItemLevel": 30,
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Steel",
+        "Quantity": 7
+      },
+      {
+        "ItemId": "Ingredient_Leather_Light",
+        "Quantity": 4
+      },
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Linen",
+        "Quantity": 4
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Weapon_Bench",
+        "Categories": [
+          "Weapon_Sword"
+        ]
+      }
+    ],
+    "TimeSeconds": 5
+  },
+  "Weapon": {
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "Amount": 20,
+          "Target": "Max",
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "EntityStatsToClear": [
+      "SignatureEnergy"
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 10
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 11
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 19
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Thrust_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Thrust_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 27
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 3
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Spin_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 20
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Stab_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 57
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 10,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "Interactions": {
+    "Primary": "Root_Weapon_Sword_Primary",
+    "Secondary": "Root_Weapon_Sword_Secondary_Guard",
+    "Ability1": "Root_Weapon_Sword_Signature_Vortexstrike"
+  },
+  "PlayerAnimationsId": "Sword",
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "ItemAppearanceConditions": {
+    "SignatureEnergy": [
+      {
+        "ConditionValueType": "Percent",
+        "Condition": [
+          100,
+          100
+        ],
+        "ModelVFXId": "Sword_Signature_Status",
+        "Particles": [
+          {
+            "SystemId": "Sword_Signature_Ready",
+            "TargetEntityPart": "PrimaryItem",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.8
+            }
+          },
+          {
+            "SystemId": "Sword_Signature_Status_Spawn",
+            "TargetEntityPart": "PrimaryItem",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.5
+            }
+          },
+          {
+            "SystemId": "Sword_Signature_Status",
+            "TargetEntityPart": "PrimaryItem",
+            "TargetNodeName": "Handle",
+            "Scale": 1.3,
+            "PositionOffset": {
+              "X": 0.55
+            }
+          }
+        ],
+        "FirstPersonParticles": [
+          {
+            "SystemId": "Sword_Signature_Ready",
+            "TargetEntityPart": "PrimaryItem",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.8
+            }
+          },
+          {
+            "SystemId": "Sword_Signature_Status_Spawn",
+            "TargetEntityPart": "PrimaryItem",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "Y": -100
+            }
+          },
+          {
+            "SystemId": "Sword_Signature_Status",
+            "TargetEntityPart": "PrimaryItem",
+            "TargetNodeName": "Handle",
+            "PositionOffset": {
+              "X": 0.5
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "Utility": {
+    "Compatible": true
+  },
+  "MaxDurability": 130,
+  "DurabilityLossOnHit": 0.21,
+  "Tags": {
+    "Type": [
+      "Weapon"
+    ],
+    "Family": [
+      "Sword"
+    ]
+  },
+  "Categories": [
+    "Items.Weapons"
+  ],
+  "Reticle": "DefaultMelee",
+  "ItemSoundSetId": "ISS_Weapons_Blade_Large"
+}

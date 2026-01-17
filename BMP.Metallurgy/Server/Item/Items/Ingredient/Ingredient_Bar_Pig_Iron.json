@@ -1,6 +1,6 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Ingredient_Bar_Steel.name"
+    "Name": "server.items.Ingredient_Bar_Pig_Iron.name"
   },
   "Categories": [
     "Items"
@@ -9,21 +9,25 @@
     "Input": [
       {
         "ItemId": "Ingredient_Bar_Iron",
+        "Quantity": 2
+      },
+      {
+        "ItemId": "Ingredient_Bar_Pig_Iron",
         "Quantity": 1
       }
     ],
     "BenchRequirement": [
       {
         "Type": "Processing",
-        "Id": "Blast_Furnace"
+        "Id": "Alloy_Kiln"
       }
     ],
     "OutputQuantity": 1,
-    "TimeSeconds": 30
+    "TimeSeconds": 15
   },
   "Model": "Resources/Materials/Ingot.blockymodel",
-  "Texture": "Resources/Steel_Ingot.png",
-  "Icon": "Icons/ItemsGenerated/Ingredient_Bar_Steel.png",
+  "Texture": "Resources/Ingot/Pig_Iron_Ingot.png",
+  "Icon": "Icons/ItemsGenerated/Ingredient_Bar_Pig_Iron.png",
   "ResourceTypes": [
     {
       "Id": "Metal_Bars"
