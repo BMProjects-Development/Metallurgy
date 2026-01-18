@@ -9,25 +9,12 @@
   "Recipe": {
     "Input": [
       {
-        "Quantity": 1,
-        "ItemId": "Bench_Furnace"
+        "Quantity": 10,
+        "ResourceTypeId": "Rock"
       },
       {
         "Quantity": 10,
         "ItemId": "Ingredient_Bar_Copper"
-      }
-    ],
-    "Output": [
-      {
-        "ItemId": "Bench_Alloy_Kiln",
-        "Metadata": {
-          "BlockState": {
-            "Type": "processingBench",
-            "FuelContainer": {
-              "Capacity": 2
-            }
-          }
-        }
       }
     ],
     "BenchRequirement": [
@@ -107,14 +94,14 @@
             "Material": [
               {
                 "ItemId": "Ingredient_Bar_Bronze",
-                "Quantity": 10
-              },
-              {
-                "ItemId": "Ingredient_Bar_Steel",
                 "Quantity": 5
               },
               {
-                "ItemId": "Ingredient_Bar_Tin",
+                "ItemId": "Ingredient_Bar_Pig_Iron",
+                "Quantity": 5
+              },
+              {
+                "ItemId": "Ingredient_Bar_Manyullyn",
                 "Quantity": 5
               }
             ],
