@@ -1,6 +1,7 @@
 {
   "TranslationProperties": {
-    "Name": "server.items.Ingredient_Bar_Manyullyn.name"
+    "Name": "server.items.Ingredient_Bar_Manyullyn.name",
+    "Description": "server.items.Ingredient_Bar_Manyullyn.description"
   },
   "Categories": [
     "Items"

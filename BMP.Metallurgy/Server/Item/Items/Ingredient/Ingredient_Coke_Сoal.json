@@ -39,6 +39,9 @@
   "ResourceTypes": [
     {
       "Id": "Coke_Coal"
+    },
+    {
+      "Id": "Fuel"
     }
   ],
   "FuelQuality": 15,
