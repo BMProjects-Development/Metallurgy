@@ -1,7 +1,11 @@
 {
   "Group": "BMP",
   "Name": "Metallurgy",
+<<<<<<< Updated upstream
   "Version": "0.8",
+=======
+  "Version": "0.5",
+>>>>>>> Stashed changes
   "Description": "Metallurgy is our everything.",
   "Authors": [
     {
