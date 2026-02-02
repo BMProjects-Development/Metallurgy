@@ -37,10 +37,10 @@
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Metallbench",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Head"
+          "Metallbench_Head"
         ],
         "RequiredTierLevel": 2
       }

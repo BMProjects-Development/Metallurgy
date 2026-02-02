@@ -1,0 +1,191 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Bench_Metallbench.name",
+    "Description": "server.items.Bench_Metallbench.description"
+  },
+  "Recipe": {
+    "Input": [
+      {
+        "Quantity": 4,
+        "ItemId": "Ingredient_Bar_Iron"
+      },
+      {
+        "Quantity": 5,
+        "ResourceTypeId": "Wood_Trunk"
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Workbench_Crafting"
+        ],
+        "Id": "Workbench"
+      }
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Bench_Metallurgist_Workbench.png",
+  "Categories": [
+    "Furniture.Benches"
+  ],
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Resources/Bench/Metallurgist's workbench.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Bench/Metallbench.png",
+        "Weight": 1
+      }
+    ],
+    "HitboxType": "Bench_Workbench",
+    "VariantRotation": "NESW",
+    "Bench": {
+      "Type": "Crafting",
+      "Categories": [
+        {
+          "Id": "Metallbench_Blocks",
+          "Icon": "Icons/CraftingCategories/Bench_Alloy_Kiln.png",
+          "Name": "server.benchCategories.Metallbench.Blocks"
+        },
+        {
+          "Id": "Metallbench_Swords",
+          "Icon": "Icons/CraftingCategories/Weapon_Sword_Manyullyn.png",
+          "Name": "server.benchCategories.Metallbench.Swords"
+        },
+        {
+          "Id": "Metallbench_Shields",
+          "Icon": "Icons/CraftingCategories/Weapon_Shield_Manyullyn.png",
+          "Name": "server.benchCategories.Metallbench.Shields"
+        },
+        {
+          "Id": "Metallbench_Head",
+          "Icon": "Icons/CraftingCategories/Armor_Manyullyn_Head.png",
+          "Name": "server.benchCategories.Metallbench.Head"
+        },
+        {
+          "Id": "Metallbench_Body",
+          "Icon": "Icons/CraftingCategories/Armor_Manyullyn_Chest.png",
+          "Name": "server.benchCategories.Metallbench.Body"
+        },
+        {
+          "Id": "Metallbench_Gloves",
+          "Icon": "Icons/CraftingCategories/Armor_Manyullyn_Hands.png",
+          "Name": "server.benchCategories.Metallbench.Gloves"
+        },
+        {
+          "Id": "Metallbench_Legs",
+          "Icon": "Icons/CraftingCategories/Armor_Manyullyn_Legs.png",
+          "Name": "server.benchCategories.Metallbench.Legs"
+        }
+      ],
+      "LocalOpenSoundEventId": "SFX_Workbench_Open",
+      "LocalCloseSoundEventId": "SFX_Workbench_Close",
+      "CompletedSoundEventId": "SFX_Workbench_Craft",
+      "FailedSoundEventId": "SFX_Generic_Crafting_Failed",
+      "BenchUpgradeSoundEventId": "SFX_Workbench_Upgrade_Start_Default",
+      "BenchUpgradeCompletedSoundEventId": "SFX_Workbench_Upgrade_Complete_Default",
+      "Id": "Metallbench",
+      "TierLevels": [
+        {
+          "UpgradeRequirement": {
+            "Material": [
+              {
+                "ItemId": "Ingredient_Bar_Manyullyn",
+                "Quantity": 3
+              },
+              {
+                "ItemId": "Ingredient_Bar_Pig_Iron",
+                "Quantity": 3
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "State": {
+      "Id": "crafting",
+      "Definitions": {
+        "CraftCompleted": {
+          "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim",
+          "Looping": true
+        },
+        "CraftCompletedInstant": {
+          "CustomModelAnimation": "Blocks/Benches/Workbench_Crafting.blockyanim"
+        },
+        "Tier2": {
+          "CustomModel": "Blocks/Benches/Workbench2.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Benches/Workbench2_Texture.png",
+              "Weight": 1
+            }
+          ],
+          "HitboxType": "Bench_Workbench2",
+          "State": {
+            "Id": "crafting",
+            "Definitions": {
+              "CraftCompleted": {
+                "CustomModelAnimation": "Blocks/Benches/Workbench2_Crafting.blockyanim"
+              }
+            }
+          }
+        },
+        "Tier3": {
+          "CustomModel": "Blocks/Benches/Workbench3.blockymodel",
+          "CustomModelTexture": [
+            {
+              "Texture": "Blocks/Benches/Workbench3_Texture.png",
+              "Weight": 1
+            }
+          ],
+          "HitboxType": "Bench_Workbench3",
+          "State": {
+            "Id": "crafting",
+            "Definitions": {
+              "CraftCompleted": {
+                "CustomModelAnimation": "Blocks/Benches/Workbench3_Crafting.blockyanim"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Benches"
+      }
+    },
+    "BlockParticleSetId": "Wood",
+    "ParticleColor": "#6e4a2f",
+    "Support": {
+      "Down": [
+        {
+          "FaceType": "Full"
+        }
+      ]
+    },
+    "BlockSoundSetId": "Wood"
+  },
+  "PlayerAnimationsId": "Block",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      14,
+      -13.5
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Bench"
+    ]
+  },
+  "MaxStack": 1,
+  "ItemSoundSetId": "ISS_Blocks_Wood"
+}

@@ -22,9 +22,9 @@
       {
         "Type": "Crafting",
         "Categories": [
-          "Workbench_Crafting"
+          "Metallbench_Blocks"
         ],
-        "Id": "Workbench"
+        "Id": "Metallbench"
       }
     ],
     "TimeSeconds": 3

@@ -29,9 +29,9 @@
       {
         "Type": "Crafting",
         "Categories": [
-          "Weapon_Sword"
+          "Metallbench_Swords"
         ],
-        "Id": "Weapon_Bench",
+        "Id": "Metallbench",
         "RequiredTierLevel": 2
       }
     ]

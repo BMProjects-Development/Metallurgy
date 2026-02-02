@@ -37,10 +37,10 @@
     ],
     "BenchRequirement": [
       {
-        "Id": "Armor_Bench",
+        "Id": "Metallbench",
         "Type": "Crafting",
         "Categories": [
-          "Armor_Hands"
+          "Metallbench_Gloves"
         ],
         "RequiredTierLevel": 2
       }

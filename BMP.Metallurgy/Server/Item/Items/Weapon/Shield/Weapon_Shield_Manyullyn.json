@@ -1,0 +1,64 @@
+{
+  "Parent": "Template_Weapon_Shield",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Shield_Manyullyn.name"
+  },
+  "Quality": "Rare",
+  "ItemLevel": 35,
+  "Model": "Items/Weapons/Shield/Cobalt.blockymodel",
+  "Texture": "Resources/Weapons/Manyullyn/Manyullyn_Shield_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Shield_Manyullyn.png",
+  "Recipe": {
+    "TimeSeconds": 4,
+    "KnowledgeRequired": false,
+    "Input": [
+      {
+        "ItemId": "Ingredient_Bar_Manyullyn",
+        "Quantity": 7
+      },
+      {
+        "ItemId": "Ingredient_Leather_Heavy",
+        "Quantity": 3
+      },
+      {
+        "ItemId": "Ingredient_Fabric_Scrap_Shadoweave",
+        "Quantity": 3
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Type": "Crafting",
+        "Categories": [
+          "Metallbench_Shields"
+        ],
+        "RequiredTierLevel": 2,
+        "Id": "Metallbench"
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Shield_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 17.11,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      325,
+      265,
+      25
+    ],
+    "Translation": [
+      -24,
+      -32
+    ]
+  }
+}
