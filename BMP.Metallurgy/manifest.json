@@ -1,12 +1,8 @@
 {
   "Group": "BMP",
   "Name": "Metallurgy",
-<<<<<<< HEAD
-  "Version": "0.5",
-=======
-  "Version": "0.9",
->>>>>>> 9276c465bd8c4e665790f08d50b30e72e7937a0e
-  "Description": "Metallurgy is our everything.",
+  "Version": "0.10",
+  "Description": "Metallurgy is our everything!",
   "Authors": [
     {
       "Name": "Maksik210",
