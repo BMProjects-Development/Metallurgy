@@ -33,7 +33,7 @@
     "Material": "Solid",
     "DrawType": "Model",
     "Opacity": "Transparent",
-    "CustomModel": "Blocks/Benches/Furnace.blockymodel",
+    "CustomModel": "Resources/Bench/Furnace.blockymodel",
     "CustomModelTexture": [
       {
         "Texture": "Resources/Bench/Coke_Furnace_Texture_Off.png",

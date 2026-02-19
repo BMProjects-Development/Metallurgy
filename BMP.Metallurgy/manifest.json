@@ -1,8 +1,8 @@
 {
   "Group": "BMP",
   "Name": "Metallurgy",
-  "Version": "1.0",
-  "Description": "Metallurgy is our everything!",
+  "Version": "1.0.1",
+  "Description": "Metallurgy is our everything.",
   "Authors": [
     {
       "Name": "Maksik210",
@@ -16,6 +16,7 @@
     }
   ],
   "Website": "https://curseforge.com/hytale/mods/metallurgy",
+  "ServerVersion": "2026.02.18-f3b8fff95",
   "Dependencies": {},
   "OptionalDependencies": {},
   "LoadBefore": {},

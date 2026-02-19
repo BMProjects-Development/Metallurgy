@@ -32,7 +32,7 @@
     "Material": "Solid",
     "DrawType": "Model",
     "Opacity": "Transparent",
-    "CustomModel": "Blocks/Benches/Furnace.blockymodel",
+    "CustomModel": "Resources/Bench/Furnace.blockymodel",
     "CustomModelTexture": [
       {
         "Texture": "Resources/Bench/Alloy_Kiln_Texture_Off.png",
